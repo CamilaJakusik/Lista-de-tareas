@@ -3,21 +3,31 @@
 
 <head>
     <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Lista de Tareas</h1>
-    </header>
-    <main>
-        <section id="tareas">
-            <h3>Agrega aquí tus tareas</h3>
-            <input type="text" id="new-task" placeholder="Nueva tarea">
-            <button id="add-task">Agregar</button>
-            <ul id="task-list"></ul>
-        </section>
-    </main>
+    <section class="section">
+        <div class="container">
+            <div class="box">
+                <header class="has-text-centered">
+                    <h1 class="title">Lista de Tareas</h1>
+                </header>
+                <section id="tareas">
+                    <div class="field is-grouped is-grouped-centered">
+                        <p class="control is-expanded">
+                            <input type="text" id="new-task" class="input is-small" placeholder="Nueva tarea">
+                        </p>
+                        <p class="control">
+                            <button id="add-task" class="button is-primary is-small">Agregar</button>
+                        </p>
+                    </div>
+                    <ul id="task-list" class="list is-hoverable"></ul>
+                </section>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 
